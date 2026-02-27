@@ -1,0 +1,31 @@
+Flow Diagram
+
+Start
+   ↓
+Initialize w1, w2, b
+   ↓
+For each epoch
+   ↓
+Take input (x1, x2)
+   ↓
+Compute z = w1x1 + w2x2 + b
+   ↓
+Apply Step Function
+   ↓
+Predict y_hat
+   ↓
+Compute Error = y - y_hat
+   ↓
+Is Error ≠ 0 ?
+   ↓               ↓
+  Yes              No
+   ↓               ↓
+Update weights     Next input
+   ↓
+Next input
+   ↓
+All epochs done?
+   ↓
+Test on all inputs
+   ↓
+End
