@@ -1,0 +1,39 @@
+Start
+↓
+Load Dataset
+↓
+Create Binary Labels (Type 1 → 1, Others → 0)
+↓
+Separate Features (X) and Labels (y)
+↓
+Split into Train and Test Data
+↓
+Apply Feature Scaling
+↓
+Initialize Weights (w) and Bias (b)
+↓
+For each epoch
+↓
+Compute z = Xw + b
+↓
+Apply Sigmoid Function
+↓
+Compute Probability p
+↓
+Compute Loss (Binary Cross Entropy)
+↓
+Compute Error = p − y
+↓
+Update Weights and Bias using Gradient Descent
+↓
+All epochs completed?
+↓
+Generate Probabilities on Test Data
+↓
+Apply Threshold (0.5 / 0.7)
+↓
+Predict Final Labels
+↓
+Calculate Accuracy
+↓
+End
