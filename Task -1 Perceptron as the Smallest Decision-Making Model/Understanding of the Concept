@@ -1,1 +1,21 @@
+**Effect of Learning Rate**
 
+The learning rate controls how much correction is applied after each mistake.
+If the learning rate is very small, the perceptron learns slowly and requires many epochs. 
+If it is too large, the updates become unstable and the decision boundary may oscillate.
+
+Since inputs are binary and errors are limited to -1, 0, or 1, a learning rate of 0.1 works well and provides stable convergence.
+
+
+**Why the Same Code Learned Different Gates**
+
+The architecture of the perceptron remained exactly the same for all logic gates.
+Only the dataset was changed.
+
+This proves that behavior is defined by data, not by the code structure.
+
+For AND, OR, NAND, and NOR, the data is linearly separable, so the perceptron successfully finds a decision boundary.
+
+For XOR, the data is not linearly separable. Therefore, no single linear boundary can correctly classify all points. The perceptron fails not because of incorrect implementation, but because the model capacity is limited.
+
+This demonstrates that model structure determines what kind of problems can be solved.
