@@ -1,1 +1,19 @@
+Concept Overview
 
+** Multiple Linear Regression using a linear perceptron predicts continuous values like salary **
+The model computes a weighted sum of input features and adds a bias:
+There is no activation function because regression requires real-valued outputs.
+It is essentially a perceptron used for numeric prediction instead of classification.
+
+** Learning Mechanism **
+
+The model learns by minimizing Mean Squared Error (MSE).
+MSE measures the average squared difference between predicted and actual values.
+Using gradient descent, weights and bias are updated gradually to reduce error.
+As training progresses, loss decreases and predictions become more accurate.
+
+** Analysis and Limitations **
+
+The model provides smooth and continuous predictions.
+However, it assumes a linear relationship between inputs and output.
+If the relationship is nonlinear, performance may reduce.
