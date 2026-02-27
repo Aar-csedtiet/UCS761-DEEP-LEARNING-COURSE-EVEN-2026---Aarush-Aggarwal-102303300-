@@ -1,0 +1,38 @@
+        Start
+          ↓
+   Load Dataset (df)
+          ↓
+ Separate Inputs (X) 
+ and Target (y)
+          ↓
+ Initialize Weights (w)
+ and Bias (b)
+          ↓
+       Set:
+   Learning Rate
+   Number of Epochs
+          ↓
+      Training Loop
+          ↓
+     Predict (y_hat)
+   y_hat = X·w + b
+          ↓
+   Compute Loss (MSE)
+          ↓
+   Compute Gradients
+      (dw, db)
+          ↓
+ Update Parameters
+ w = w - lr * dw
+ b = b - lr * db
+          ↓
+ Repeat Until
+ Epochs Complete
+          ↓
+ Print Final
+ Weights & Bias
+          ↓
+ Predict for
+ New Input
+          ↓
+         End
