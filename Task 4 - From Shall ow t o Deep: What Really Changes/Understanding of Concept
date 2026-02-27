@@ -1,1 +1,19 @@
+** Deep Neural Networks increase representational power by stacking multiple nonlinear layers **
+As depth increases, the network applies repeated linear transformations followed by nonlinear activations.
+Unlike shallow models, deeper networks can capture complex nonlinear patterns.
+The core computation remains weighted sum + bias, but applied multiple times hierarchically.
 
+** Learning Mechanism **
+
+The model learns using forward propagation and backpropagation.
+Mean Squared Error (MSE) is used to measure prediction error.
+Gradients are computed using the chain rule across all layers.
+Weights and biases are updated using gradient descent.
+Greater depth allows richer feature learning without changing the basic training algorithm.
+
+** Analysis and Limitations **
+
+Shallow networks learn simple nonlinear relationships.
+Deep networks approximate complex functions more effectively.
+However, deeper models may face vanishing gradients and slower convergence.
+Performance depends on activation choice and proper parameter initialization.
