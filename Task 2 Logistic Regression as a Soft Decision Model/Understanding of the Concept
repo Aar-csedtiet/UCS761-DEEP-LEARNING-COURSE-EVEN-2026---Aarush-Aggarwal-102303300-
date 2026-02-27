@@ -1,1 +1,17 @@
+** Concept Overview **
 
+Logistic Regression is a binary classification model that produces probabilities instead of direct class labels. 
+The model first computes a linear combination of input features using weights and bias. 
+This value is then passed through the sigmoid function, which converts it into a probability between 0 and 1.
+Because of this probabilistic output, the model expresses confidence rather than making rigid decisions.
+
+** Learning Mechanism **
+
+The sigmoid function plays a crucial role by ensuring smooth transitions between classes. 
+Instead of using a hard threshold like the perceptron, logistic regression applies Binary Cross Entropy loss, which penalizes confident wrong predictions more heavily than uncertain ones.
+This allows gradual and stable adjustment of weights during training, leading to more meaningful probability estimates.
+
+** Analysis and Limitations **
+
+Logistic regression provides better interpretability compared to hard decision models because it outputs confidence scores. 
+However, the model is limited to learning linear decision boundaries. If the relationship between features is nonlinear, performance may degrade unless feature transformations are applied.
