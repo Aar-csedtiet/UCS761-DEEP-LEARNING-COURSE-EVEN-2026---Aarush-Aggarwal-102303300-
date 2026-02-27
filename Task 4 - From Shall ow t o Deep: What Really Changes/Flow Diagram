@@ -1,1 +1,49 @@
-
+Start
+   ↓
+Generate Synthetic
+Nonlinear Dataset
+(Sine + Polynomial)
+   ↓
+Initialize Network
+Architecture
+(Number of Layers,
+Neurons per Layer)
+   ↓
+Initialize Weights
+and Biases for
+All Layers
+   ↓
+Set:
+Learning Rate
+Number of Epochs
+Activation Function
+   ↓
+Training Loop
+   ↓
+Forward Propagation
+Layer 1 → Layer 2 → ...
+(Weighted Sum + Activation)
+   ↓
+Final Output (y_hat)
+   ↓
+Compute Loss (MSE)
+   ↓
+Backpropagation
+Compute Gradients
+for All Layers
+   ↓
+Update Parameters
+W = W - lr * dW
+b = b - lr * db
+   ↓
+Repeat Until
+Epochs Complete
+   ↓
+Compare:
+Shallow vs Deep
+Performance
+   ↓
+Plot Loss Curve
+& Predictions
+   ↓
+End
