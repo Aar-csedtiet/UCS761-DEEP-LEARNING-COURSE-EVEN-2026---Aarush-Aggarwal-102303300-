@@ -1,0 +1,86 @@
+1. Where did training fail due to structure?
+
+Deep sigmoid network (10-layer) struggled.
+
+Gradients became very small in early layers.
+
+Validation accuracy stopped improving.
+
+Structure prevented effective gradient flow.
+
+
+2. Where did optimizer matter more than activation?
+
+In CNN, activation was same (ReLU).
+
+SGD was slow and unstable.
+
+Adam converged faster and smoother.
+
+So optimizer affected convergence more than activation.
+
+
+3.  Where did activation matter more than depth?
+
+Same depth (10 layers), different activations.
+
+Sigmoid degraded.
+
+ReLU trained properly.
+
+Activation influenced learning more than adding layers.
+
+
+4.️ What causes gradient shrinkage?
+
+Backprop multiplies derivatives layer by layer.
+
+Sigmoid derivative is small.
+
+Repeated multiplication → gradient becomes near zero.
+
+Early layers stop learning.
+
+
+5. Why does CNN generalize better than dense?
+
+Parameter sharing.
+
+Fewer parameters.
+
+Preserves spatial structure.
+
+Strong inductive bias.
+
+
+️6. Why does dropout reduce overfitting?
+
+Randomly disables neurons.
+
+Prevents co-adaptation.
+
+Acts like model averaging.
+
+Reduces train–validation gap.
+
+
+7.️ When does depth hurt test performance?
+
+When model capacity > data.
+
+Training accuracy high but validation low.
+
+Overfitting increases.
+
+Vanishing gradients in deep sigmoid.
+
+
+8. Did validation always predict test performance correctly?
+
+Mostly close.
+
+Small differences observed.
+
+Validation is an estimate, not exact.
+
+Depends on data split.
