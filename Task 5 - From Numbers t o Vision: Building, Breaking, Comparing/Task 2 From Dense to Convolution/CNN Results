@@ -1,0 +1,8 @@
+Epoch: 0 Loss: 0.6923 Acc: 0.599
+Epoch: 10 Loss: 0.6885 Acc: 0.8452
+Epoch: 20 Loss: 0.6848 Acc: 0.9395
+Epoch: 30 Loss: 0.6812 Acc: 0.9757
+Epoch: 40 Loss: 0.6776 Acc: 0.9938
+Epoch: 50 Loss: 0.674 Acc: 0.9962
+Validation Acc: 1.0
+Test Acc: 0.9955555555555555
