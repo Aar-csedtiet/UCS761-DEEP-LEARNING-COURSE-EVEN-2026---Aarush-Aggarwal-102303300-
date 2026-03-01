@@ -1,0 +1,78 @@
+# -----------------------------
+# PART 2C — PARAMETER COUNT
+# -----------------------------
+
+# ----- Dense Baseline -----
+# Architecture: 64 → 16 → 1
+
+dense_input = 64
+dense_hidden = 16
+dense_output = 1
+
+dense_params_layer1 = (dense_input * dense_hidden) + dense_hidden
+dense_params_layer2 = (dense_hidden * dense_output) + dense_output
+
+total_dense_params = dense_params_layer1 + dense_params_layer2
+
+print("Dense Layer 1 Params:", dense_params_layer1)
+print("Dense Layer 2 Params:", dense_params_layer2)
+print("Total Dense Parameters:", total_dense_params)
+
+
+print("\n---------------------------\n")
+
+# ----- CNN Model -----
+# Conv: 3x3 filter, 1 input channel, 1 filter
+# Output after pooling: 3x3 → Flatten → 9 → Dense → 1
+
+conv_filter_size = 3
+conv_in_channels = 1
+conv_out_channels = 1
+
+conv_params = (conv_filter_size * conv_filter_size * conv_in_channels) + 1
+
+flatten_size = 9
+dense_output = 1
+
+cnn_dense_params = (flatten_size * dense_output) + 1
+
+total_cnn_params = conv_params + cnn_dense_params
+
+print("Conv Layer Params:", conv_params)
+print("Dense Output Params:", cnn_dense_params)
+print("Total CNN Parameters:", total_cnn_params)
+
+
+print("\n==============================")
+print("FINAL COMPARISON")
+print("==============================")
+
+print("Total Dense Parameters:", total_dense_params)
+print("Total CNN Parameters:", total_cnn_params)
+
+if total_dense_params > total_cnn_params:
+    print("\nCNN uses fewer parameters than Dense.")
+else:
+    print("\nDense uses fewer parameters than CNN.")
+
+
+
+
+Results:
+Dense Layer 1 Params: 1040
+Dense Layer 2 Params: 17
+Total Dense Parameters: 1057
+
+---------------------------
+
+Conv Layer Params: 10
+Dense Output Params: 10
+Total CNN Parameters: 20
+
+==============================
+FINAL COMPARISON
+==============================
+Total Dense Parameters: 1057
+Total CNN Parameters: 20
+
+CNN uses fewer parameters than Dense.
