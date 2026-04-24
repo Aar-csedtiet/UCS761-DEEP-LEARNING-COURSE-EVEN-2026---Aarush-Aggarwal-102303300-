@@ -1,1 +1,51 @@
+--- Running on Electric_Production ---
 
+Training MLP...
+MLP → MAE: 0.7582, RMSE: 0.9626
+
+Training RNN...
+RNN → MAE: 0.6715, RMSE: 0.8382
+
+Training LSTM...
+LSTM → MAE: 0.7737, RMSE: 0.9796
+
+Training Transformer...
+Transformer → MAE: 0.2379, RMSE: 0.3107
+
+--- Ablation Study: Electric_Production ---
+
+Window Size: 5
+MAE: 1.2262, RMSE: 1.4111
+
+Window Size: 10
+MAE: 0.9978, RMSE: 1.1929
+
+Window Size: 20
+MAE: 0.6137, RMSE: 0.7722
+
+--- Running on AirQuality ---
+
+Training MLP...
+MLP → MAE: 0.6177, RMSE: 0.7980
+
+Training RNN...
+RNN → MAE: 0.4261, RMSE: 0.6059
+
+Training LSTM...
+LSTM → MAE: 0.6456, RMSE: 0.8180
+
+Training Transformer...
+Transformer → MAE: 0.3622, RMSE: 0.5217
+
+--- Ablation Study: AirQuality ---
+
+Window Size: 5
+MAE: 0.7380, RMSE: 0.9268
+
+Window Size: 10
+MAE: 0.4883, RMSE: 0.6426
+
+Window Size: 20
+MAE: 0.5764, RMSE: 0.7724
+
+Click to add a cell.
